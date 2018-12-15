@@ -8,7 +8,9 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import { Navigator } from 'react-native-deprecated-custom-components';
 import TabNavigator from 'react-native-tab-navigator';
+import Boy from './Boy'
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -22,7 +24,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <TabNavigator>
+        {/* <TabNavigator>
           <TabNavigator.Item
             selected={this.state.selectedTab === 'tb_popular'}
             selectedTitleStyle={{ color: 'red' }}
@@ -60,7 +62,19 @@ export default class App extends Component<Props> {
             onPress={() => this.setState({ selectedTab: 'tb_my' })}>
             <View style={{ backgroundColor: 'blue', flex: 1 }}></View>
           </TabNavigator.Item>
-        </TabNavigator>
+        </TabNavigator> */}
+        <Navigator
+          initialRoute = {{
+            component: Boy
+          }}
+          renderScene = {
+            (route, navigator) => {
+               let Component = route.component;
+               return <Component navigator={navigator} {...route.params} />
+            }
+          }
+        >
+        </Navigator>
       </SafeAreaView>
     );
   }
