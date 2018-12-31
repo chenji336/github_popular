@@ -10,9 +10,10 @@ import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 import { Navigator } from 'react-native-deprecated-custom-components';
 import TabNavigator from 'react-native-tab-navigator';
-import Boy from './Boy'
+import Boy from './Boy';
 
 type Props = {};
+
 export default class App extends Component<Props> {
   constructor(props) {
     super(props);
