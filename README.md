@@ -56,3 +56,8 @@ fetch是替换XMLHttpRequest的浏览器提供，主要是通过promise实现。
     YellowBox.ignoreWarnings(['Remote debugger']);
 ```
 
+## 第五章 popular（最热）模块开发
+### 数据层设计
+up主封装的很像java了，使用了dao层
+https://api.github.com/search/repositories?q=&sort=stars
+
