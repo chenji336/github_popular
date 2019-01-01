@@ -15,7 +15,7 @@ const StatusBarShape = {
 export default class NavigationBar extends Component {
 
     static propTypes = {
-        style: PropTypes.style,
+        // style: PropTypes.style,
         hidden: PropTypes.bool,
         title: PropTypes.string,
         titleView: PropTypes.element,

@@ -38,3 +38,21 @@ navigation header和content的互动（setParams)
 
 ### 2-9/10 drawerNavigator精讲
 参照offical内容+作者提供的demo
+
+## 第三章 适配RN 0.55最新高性能列表组件精讲
+内容都在react-native-study/AwesomeProject/offical-study里面
+
+## 第四章 项目基础功能开发（ListView、Fetch、启动）
+### 4-1 ListView列表
+最新版本的被FlatList替换掉
+### 4-2/3 Fetch的使用的轻量封装
+fetch是替换XMLHttpRequest的浏览器提供，主要是通过promise实现。兼容性查看 canIUse
+封装就是对get和post的封装而已
+### 4-4 项目启动引导流程
+现在使用的还是老版本的navigator以及listview，因为跟着课程来所以先使用，后续会改成react-navigation以及fasterList
+忽略黄色提醒:
+```
+    import { YellowBox } from 'react-native';
+    YellowBox.ignoreWarnings(['Remote debugger']);
+```
+
